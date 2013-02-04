@@ -42,11 +42,17 @@ li {
 }
 
 .fb_ltr,
+.fb-like,
+.fb-like > span,
 .fb-comments,
 .fb-comments > span {
   width: 100% !important;
 }
 
 .fb-comments {
-  margin-top: 50px;
+  margin-top: em(20px, $context);
+}
+
+.fb-like {
+  margin-top: em(20px, $context);
 }

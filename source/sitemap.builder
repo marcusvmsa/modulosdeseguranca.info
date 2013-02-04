@@ -9,8 +9,6 @@ xml.urlset :xmlns => "http://www.sitemaps.org/schemas/sitemap/0.9" do
     http://modulosdeseguranca.info/itau
     http://modulosdeseguranca.info/santander
   ].each do |url|
-    xml.url do
-      xml.loc(url)
-    end
+    xml.url { xml.loc(url) }
   end
 end
