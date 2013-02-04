@@ -1,0 +1,15 @@
+@import "utils";
+
+.note {
+  padding: em(20px, $context);
+}
+
+.info {
+  background: #bf3605;
+  color: #fff;
+  color: rgba(#fff, .8);
+}
+
+.info a {
+  color: #fd0;
+}

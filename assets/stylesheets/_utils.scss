@@ -1,0 +1,26 @@
+// Settings
+$context: 20px;
+$main-header-bg: #fdc90d;
+$logo-color: #000;
+$serif-font: Georgia, Times, "Times New Roman", serif;
+$heading-font: "Myriad Pro", sans-serif;
+
+// Remove unit from
+@function remove-unit($number) {
+  $unit: unit($number);
+  $one: 1;
+
+  @if $unit == "px" { $one: 1px; }
+  @if $unit == "em" { $one: 1em; }
+  @if $unit == "%"  { $one: 1%;  }
+
+  @return $number / $one;
+}
+
+// Convert unit to em, using the target ÷ context formula.
+
+@function em($target, $context: 16) {
+  $size: remove-unit($target) / remove-unit($context);
+
+  @return #{$size}em;
+}

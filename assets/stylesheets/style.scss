@@ -1,0 +1,52 @@
+//= require_self
+//= require_tree .
+
+@import "utils";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font: normal em($context)/1.5 sans-serif;
+  padding-bottom: em(100px, $context);
+}
+
+.content p {
+  margin-top: em(30px, $context);
+}
+
+a {
+  color: #d22506;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $heading-font;
+  line-height: 1.1;
+}
+
+h1 {
+  $size: 42px;
+
+  font-size: em($size, $context);
+  margin: em(40px, $size) 0 em(-20px, $size);
+}
+
+ul {
+  margin: em(40px, $context) 0 0 em(30px, $context);
+}
+
+li {
+  margin-top: em(20px, $context);
+}
+
+.fb_ltr,
+.fb-comments,
+.fb-comments > span {
+  width: 100% !important;
+}
+
+.fb-comments {
+  margin-top: 50px;
+}

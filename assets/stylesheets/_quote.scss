@@ -1,0 +1,23 @@
+@import "utils";
+
+.quote {
+  $size: 28px;
+
+  font-size: em($size, $context);
+  position: relative;
+
+  &:before {
+    $quote-size: 160px;
+
+    content: '“';
+    font-size: em($quote-size, $size);
+    position: absolute;
+    top: em(-60px, $quote-size);
+    left: em(-10px, $quote-size);
+    color: rgba(#000, .1);
+  }
+}
+
+.content .citation {
+  margin-top: 0;
+}

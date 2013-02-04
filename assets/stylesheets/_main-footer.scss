@@ -1,0 +1,7 @@
+@import "utils";
+
+.main-footer {
+  border-top: em(1px, $context) solid #aaa;
+  margin-top: em(50px, $context);
+  padding: em(10px, $context);
+}

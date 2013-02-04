@@ -1,0 +1,20 @@
+@import "utils";
+
+.main-header {
+  background: $main-header-bg;
+  border-top: em(10px, $context) solid darken($main-header-bg, 10%);
+  padding: em(40px, $context) 0;
+
+  .logo {
+    display: block;
+    text-align: center;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  p {
+    font: em(22px, $context)/1.5 $serif-font;
+  }
+}
