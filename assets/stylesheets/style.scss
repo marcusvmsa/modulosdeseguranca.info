@@ -56,3 +56,9 @@ li {
 .fb-like {
   margin-top: em(20px, $context);
 }
+
+@media (max-width: 1024px) {
+  .container {
+    width: 85% !important;
+  }
+}
